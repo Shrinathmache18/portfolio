@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shrinath Dattatray Mache - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #ffffffdd;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 30px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 15px 15px 0 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    #name {
+      color: #fff;
+      font-size: 1.5em;
+      border-bottom: 2px solid #ecf0f1;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+
+    .section {
+      padding: 25px;
+      margin: 20px 0;
+      background: #f5f7fa;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+
+    ul li::before {
+      content: '➤';
+      margin-right: 10px;
+      color: #3498db;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .contact-item {
+      flex: 1 1 45%;
+      background: #3498db;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .contact-item:hover {
+      background: #2c80b4;
+    }
+
+    img.regular-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .contact-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="img.png" alt="Shrinath Mache Photo" class="profile-pic"/>
+      <h1>Portfolio Website</h1>
+      <marquee direction="right"><h2 id="name">Shrinath Dattatray Mache</h2></marquee>
+      <p>First-Year Mechanical Engineering Student</p>
+    </header>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>Hello! I am Shrinath Dattatray Mache, a passionate Mechanical Engineering student in my first year at MIT Academy of Engineering. Originally from Shrigonda, Ahilyanagar, Maharashtra, I am excited to explore the world of engineering and innovation.</p>
+    </div>
+
+    <div class="section">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Playing Kabaddi</li>
+        <li>Playing Cricket</li>
+        <li>Playing Chess</li>
+        <li>Watching Historical and Motivating Movies</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>B.Tech in Mechanical Engineering (First Year) - MIT Academy of Engineering, Ongoing</li>
+        <li>Elementary & Intermediate Exams - Passed</li>
+        <li>Matric</li>
+        <li>Post-Matric</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Strengths</h2>
+      <ul>
+        <li>Strong problem-solving skills</li>
+        <li>Team collaboration and leadership</li>
+        <li>Quick learner with a curious mindset</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Weaknesses</h2>
+      <ul>
+        <li>Tendency to overthink complex problems</li>
+        <li>Limited practical experience due to early stage in academics</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <div class="contact-item">Phone: +91 9028192658</div>
+        <div class="contact-item">Email: shrinathmache18@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Photos</h2>
+      <img src="https://mitaoe.ac.in/prakalp/img/content/About-MITAoE.jpg" alt="MITAOE Campus" class="regular-img">
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Shrinath Dattatray Mache | Designed with Passion</p>
+    </footer>
+  </div>
+</body>
+</html>
